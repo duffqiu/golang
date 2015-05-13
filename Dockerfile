@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM duffqiu/dev-tools:latest
 MAINTAINER duffqiu@gmail.com
 
 RUN rpm --import http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
