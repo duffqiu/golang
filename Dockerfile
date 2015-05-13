@@ -2,7 +2,7 @@ FROM duffqiu/dev-tools:latest
 MAINTAINER duffqiu@gmail.com
 
 RUN rpm --import http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
-RUN yum -y epel-release
+RUN yum -y install epel-release
 RUN yum -y  update
 RUN yum install -y wget golang hg git
 RUN yum install -y tar nodejs npm bower grunt 
