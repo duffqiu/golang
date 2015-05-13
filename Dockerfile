@@ -8,8 +8,8 @@ RUN yum install -y wget golang hg git
 RUN yum install -y tar nodejs npm 
 RUN npm install -g bower
 RUN npm install -g grunt 
-RUN mkdir -p /root/go
-ENV GOPATH=/root/go
+
+ENV GOPATH=/root/
 ENV PATH=$PATH:$GOPATH/bin
 
 WORKDIR /root
