@@ -5,8 +5,10 @@ RUN rpm --import http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 RUN yum -y install epel-release
 RUN yum -y  update
 RUN yum install -y wget golang hg git
-RUN yum install -y tar nodejs npm bower grunt 
-
+RUN yum install -y tar nodejs npm 
+RUN npm install -g bower
+RUN npm install -g grunt 
+RUN mkdir -p /root/go
 ENV GOPATH=/root/go
 ENV PATH=$PATH:$GOPATH/bin
 
