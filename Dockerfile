@@ -9,10 +9,10 @@ RUN yum install -y tar nodejs npm
 RUN npm install -g bower
 RUN npm install -g grunt 
 
-ENV GOPATH=/root/
+ENV GOPATH=/root/go
 ENV PATH=$PATH:$GOPATH/bin
 
-WORKDIR /root
+WORKDIR /workspace
 
 ENTRYPOINT ["/usr/bin/go"]
 
