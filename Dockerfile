@@ -13,6 +13,7 @@ RUN npm install -g grunt-cli
 RUN npm install -g grunt-connect-proxy
 RUN npm install -g eventemitter3@0.1.6
 RUN npm install -g grunt-contrib-compass
+RUN npm install -g yo
 RUN gem install compass
 
 RUN mkdir -p /root/go
