@@ -6,8 +6,14 @@ RUN yum -y install epel-release
 RUN yum -y  update
 RUN yum install -y wget golang hg git
 RUN yum install -y tar nodejs npm 
+RUN yum install -y ruby
 RUN npm install -g bower
 RUN npm install -g grunt 
+RUN npm install -g grunt-cli 
+RUN npm install -g grunt-connect-proxy
+RUN npm install -g eventemitter3@0.1.6
+RUN npm install -g grunt-contrib-compass
+RUN gem install compass
 
 RUN mkdir -p /root/go
 ENV GOPATH=/root/go
